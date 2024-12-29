@@ -15,6 +15,5 @@ return [
         'dbname' => $_ENV['DB_NAME'],
         'user' => $_ENV['DB_USER'],
         'charset' => $_ENV['DB_CHARSET'],
-        
     ]
 ];
