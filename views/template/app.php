@@ -13,9 +13,9 @@
             <nav class="mx-auto max-w-screen-lg flex justify-between py-4">
                 <div class="font-bold text-xl tracking-wide"><img src="images/Logo.svg" alt="logo site" style="max-width: 45px;"></div>
                 <ul class="flex space-x-4 font-bold">
-                    <li><a href="/" class="text-purple-500 bg-opacity-30 btn bg-purple-900  hover:bg-purple-700 hover:underline">Explore</a></li>
                     <?php if(auth()): ?>
-                        <li><a href="/my-books" class="text-purple-500 bg-opacity-30 btn bg-purple-900  hover:bg-purple-700 hover:underline">My Movies</a></li>
+                        <li><a href="/" class="text-purple-500 bg-opacity-30 btn bg-purple-900  hover:bg-purple-700 hover:underline">Explore</a></li>
+                        <li><a href="/my-movies" class="text-purple-500 bg-opacity-30 btn bg-purple-900  hover:bg-purple-700 hover:underline">My Movies</a></li>
                     <?php endif;?>
                 </ul>
                 <ul class="flex items-center space-x-2">
