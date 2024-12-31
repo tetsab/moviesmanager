@@ -1,7 +1,7 @@
 <div>
     <div class="border border-stone-700 rounded">
         <h1 class="border-b border-stone-700 text-stone-400 font-bold px-4 py-2">Register a movie:</h1>
-        <form class="p-4 space-y-4" method="POST" action="/book-create" enctype="multipart/form-data">
+        <form class="p-4 space-y-4" method="POST" action="/movie-create" enctype="multipart/form-data">
             <?php if ($validations = flash()->get('validations')): ?>
                 <div class="border-red-800 bg-red-900 text-red-400 px-4 py-1 rounded-md border-2 text-sm font-bold">
                     <ul>

@@ -24,8 +24,6 @@
                         <li><a href="/logout" class="bg-opacity-30 hover:underline">
                             <img src="icons/sign-out-light.svg" class="opacity-70 hover:opacity-100" alt="icon sign out" style="max-width: 25px;"></a>
                         </li>
-                    <?php else: ?>
-                        <li><a href="/login" class="hover:underline">Login</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>

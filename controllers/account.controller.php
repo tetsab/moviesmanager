@@ -11,9 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'email' => ['required', 'email'],
         'password' => ['required'],
     ], $_POST);
-
-    if ($validation->notApproved('account')) {
-        header('Location: /account');
+    if ($validation->notApproved('login')) {
+        header('Location: /account?mode=login');
         exit();
     }
 
