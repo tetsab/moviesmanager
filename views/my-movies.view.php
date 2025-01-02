@@ -11,20 +11,19 @@
             <button 
                 class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 focus:outline-none" 
                 type="submit">
-                <img src="/icons/magnifying-glass.svg" alt="" class="w-5 h-5">
+                <img src="/icons/magnifying-glass.svg" alt="magnifying class icon" class="w-5 h-5">
             </button>
         </div>
         <button 
             type="button" 
             class="px-4 py-2 rounded-md bg-purple-500 text-white font-bold hover:bg-purple-600 flex items-center space-x-2"
-            style="height: 42px;">
+            style="height: 42px;"
+            onclick="window.location.href='/movies-create'" >
             <span class="text-xl font-bold">+</span>
             <span>Add</span>
         </button>
     </div>
 </div>
-
-
 
 <div class="grid grid-cols-4 gap-4">
     <div class="col-span-3 flex flex-col gap-4">

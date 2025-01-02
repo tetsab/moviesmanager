@@ -5,10 +5,10 @@
             <img src="<?=$movie->image?>" class="w-40 rounded" alt="movie image"/>
         </div>
         <div class="flex flex-col gap-1">
-            <a href="/book?id=<?= $book->id ?>"
+            <a href="/movie?id=<?= $movie->id ?>"
                 class="font-semibold hover:underline"><?= htmlspecialchars($movie->title ?? 'Unknown Title') ?></a>
             <div class="text-xs italic"><?= htmlspecialchars($movie->writer ?? 'Unknown writer') ?></div>
-            <div class="text-xs italic"><?= str_repeat("⭐", $movie->rating_analysis ?? 0) ?> (<?= $book->count_analysis ?? 0 ?> Ratings)</div>
+            <div class="text-xs italic"><?= str_repeat("⭐", $movie->rating_analysis ?? 0) ?> (<?= $movie->count_analysis ?? 0 ?> Ratings)</div>
         </div>
     </div>
     <div class="text-sm mt-2">

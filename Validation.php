@@ -51,9 +51,18 @@ class Validation {
         }
     }
 
-    private function required($field, $value) {
-        if (strlen($value) == 0) {
-            $this->validations[] = "The $field is obligatory.";
+    private function required($field, mixed $value) {
+        if (is_array($value)) {
+            foreach ($value as $item) {
+                if (strlen($item) == 0) {
+                    $this->validations[] = "The $field is obligatory.";
+                    break;
+                }
+            }
+        } else {
+            if (strlen($value) == 0) {
+                $this->validations[] = "The $field is obligatory.";
+            }
         }
     }
 
