@@ -29,7 +29,7 @@ The application must contain the following features:
 - [x] The user's password must be encrypted.
 - [x] It must be possible to log in and log out of the application.
 - [x] It must be possible to add a new movie.
-- [ ] It must be possible to add an image for the movie.
+- [x] It must be possible to add an image for the movie.
 - [ ] It must be possible to view a movie.
 - [ ] It must be possible to search for a movie using a filter.
 - [ ] It must be possible to view "My Movies."

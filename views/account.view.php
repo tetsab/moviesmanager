@@ -9,7 +9,7 @@
 <body>
     <div class="mt-6 grid grid-cols-2 gap-2">
         <div class="rounder">
-            <img src="/images/Login.png" alt="">
+            <img src="/images/site/Login.png" alt="">
         </div>
 
         <div class="flex items-center justify-center bg-gray-950">

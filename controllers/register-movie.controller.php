@@ -26,11 +26,10 @@ if ($validationMovie->notApproved()) {
     exit();
 }
 
-
 if (!!$_FILES) {
     $newName = md5(rand());
     $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-    $image = "images/$newName.$ext";
+    $image = "images/upload/$newName.$ext";
     move_uploaded_file($_FILES['image']['tmp_name'], __DIR__ . '/../public/' . $image);
 } else {
     $image = null;

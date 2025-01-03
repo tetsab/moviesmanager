@@ -9,6 +9,7 @@ class Movie {
     public $rating_analysis;
     public $count_analysis;
     public $image;
+    public $category;
 
     public function query($where, $params)
     {
@@ -18,11 +19,14 @@ class Movie {
         select 
             m.id, m.title, m.description, m.year_release, m.image, 
             round(coalesce(sum(r.rating), 0) / 5.0) as rating_analysis, 
-            count(r.id) as count_analysis
+            count(r.id) as count_analysis,
+            c.name as category
         from movies m
         left join ratings r on r.movie_id = m.id
+        left join movie_categories mc on mc.movie_id = m.id
+        left join categories c on c.id = mc.category_id 
         where $where
-        group by m.id, m.title, m.description, m.year_release, m.image", 
+        group by m.id, m.title, m.description, m.year_release, m.image, c.id", 
         self::class, $params);
     }
 

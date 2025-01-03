@@ -18,6 +18,6 @@
 <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     <!-- Movie -->
     <?php foreach ($movies as $movie) {
-        require 'partials/_movie.php';
+        require_once 'partials/_movie.php';
     } ?>
 </section>

@@ -1,22 +1,22 @@
 <script src="/assets/js/movies-create-screen.js"></script>
 <div class="flex justify-between rounded">
     <div class="flex-1 flex flex-col items-center justify-center bg-gray-900 max-w-[350px] mx-20 rounded cursor-pointer">
-        <label for="image" class="w-full h-full flex flex-col items-center justify-center cursor-pointer">
-            <img src="/icons/upload-simple.svg" alt="upload icon" class="mb-2">
-            <span class="text-stone-400">Upload</span>
-        </label>
-        <input type="file" name="image" id="image" class="hidden">
+        <form class="w-full h-full flex flex-col items-center justify-center" method="POST" action="/register-movie" enctype="multipart/form-data">
+            <label for="image" class="w-full h-full flex flex-col items-center justify-center cursor-pointer">
+                <img src="/icons/upload-simple.svg" alt="upload icon" class="mb-2">
+                <span class="text-stone-400">Upload</span>
+            </label>
+            <input type="file" name="image" id="image" class="hidden">
     </div>
     <div class="flex-1">
         <h1 class="text-stone-400 font-bold px-4 py-2">
             New movie
         </h1>
-        <form class="p-4 space-y-4" method="POST" action="/register-movie" enctype="multipart/form-data">
+        <div class="p-4 space-y-4">
             <?php if ($validations = flash()->get('validations')): ?>
                 <div class="border-red-800 bg-red-900 text-red-400 px-4 py-1 rounded-md border-2 text-sm font-bold">
                     <ul>
                         <li>Error!</li>
-                    
                         <?php foreach ($validations as $validation): ?>
                             <li><?=$validation?></li>
                         <?php endforeach; ?>
@@ -89,6 +89,7 @@
                 type="submit">
                 Create
             </button>
-        </form>
+        </div>
     </div>
+    </form>
 </div>

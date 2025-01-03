@@ -28,7 +28,7 @@
 <div class="grid grid-cols-4 gap-4">
     <div class="col-span-3 flex flex-col gap-4">
         <?php foreach ($movies as $movie) {
-            require 'partials/_movie.php';
+            require_once 'partials/_movie.php';
         } ?>
     </div>
 </div>
