@@ -1,2 +1,2 @@
 .env
-images/*
+/public/images/upload/*
