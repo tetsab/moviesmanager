@@ -15,7 +15,7 @@ MovieManager is a web application developed as part of a challenge in Rocketseat
 
 ## 🛠️ Technologies Used
 
-- **Backend**: PHP (Core PHP concepts)
+- **Backend**: PHP (Core PHP concepts), Javascript
 - **Frontend**: HTML5, CSS3, Tailwind
 - **Database**: MySQL for storing user accounts, movies, ratings and categories data.
 - **Other Tools**: ˜
@@ -30,8 +30,8 @@ The application must contain the following features:
 - [x] It must be possible to log in and log out of the application.
 - [x] It must be possible to add a new movie.
 - [x] It must be possible to add an image for the movie.
-- [ ] It must be possible to view a movie.
-- [ ] It must be possible to search for a movie using a filter.
-- [ ] It must be possible to view "My Movies."
-- [ ] It must be possible to add a rating for a movie.
-- [ ] It must be possible to view a movie's rating.
+- [x] It must be possible to view a movie.
+- [x] It must be possible to search for a movie using a filter.
+- [x] It must be possible to view "My Movies."
+- [x] It must be possible to add a rating for a movie.
+- [x] It must be possible to view a movie's rating.

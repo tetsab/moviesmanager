@@ -6,6 +6,7 @@
             <button onclick="closeModal()" class="text-white text-xl font-bold">✖</button>
         </div>
         <form action="/rating-create" method="POST" id="rating-form">
+            <input name="movie_id" type="hidden" value="<?=$movie->id?>"/>
             <div class="mb-4">
                 <label for="rating" class="block text-gray-300 font-semibold">Rating</label>
                 <select 
