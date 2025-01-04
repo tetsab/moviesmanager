@@ -30,7 +30,7 @@ class Movie {
         self::class, $params);
     }
 
-    public static function get($id): ?array 
+    public static function get($id): ?Movie 
     {
         return (new self)->query('m.id = :id', ['id' => $id])->fetch();
     }

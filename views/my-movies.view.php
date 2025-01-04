@@ -1,7 +1,7 @@
 <?php if(auth()): ?>
-<div class="flex justify-between">
+<div class="flex justify-between items-center">
     <h1 class="mt-6 font-bold text-lg">My Movies</h1>
-    <div class="flex justify-between space-x-4">
+    <div class="flex items-center space-x-4">
         <div class="relative w-full max-w-sm">
             <input 
                 type="text"
@@ -11,7 +11,7 @@
             <button 
                 class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 focus:outline-none" 
                 type="submit">
-                <img src="/icons/magnifying-glass.svg" alt="magnifying class icon" class="w-5 h-5">
+                <img src="/icons/magnifying-glass.svg" alt="magnifying glass icon" class="w-5 h-5">
             </button>
         </div>
         <button 
@@ -25,11 +25,11 @@
     </div>
 </div>
 
-<div class="grid grid-cols-4 gap-4">
-    <div class="col-span-3 flex flex-col gap-4">
-        <?php foreach ($movies as $movie) {
-            require_once 'partials/_movie.php';
-        } ?>
-    </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6">
+    <?php foreach ($movies as $movie): ?>
+        <div class="movie-container">
+            <?php require 'partials/_movie.php'; ?>
+        </div>
+    <?php endforeach; ?>
 </div>
 <?php endif; ?>
